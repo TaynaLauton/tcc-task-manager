@@ -1,0 +1,14 @@
+# Dependências
+backend/node_modules/
+frontend/node_modules/
+
+# Variáveis de ambiente — nunca subir
+backend/.env
+frontend/.env
+
+# Build
+frontend/dist/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
