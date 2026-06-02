@@ -8,7 +8,12 @@ const shoppingRoutes = require('./routes/shoppingRoutes');
 
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({
+  origin: [
+    'http://localhost:5173',                        // desenvolvimento
+    'https://taskflow-frontend.onrender.com'        // produção
+  ]
+}));
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
